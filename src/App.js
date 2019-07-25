@@ -37,8 +37,8 @@ class App extends Component {
     return {
       leftCol: face.left_col * 100,
       topRow: face.top_row * 100,
-      rightCol: 100 - (face.right_col * 100),
-      bottomRow: 100 - (face.bottom_row * 100)
+      rightCol: 100 - face.right_col * 100,
+      bottomRow: 100 - face.bottom_row * 100
     };
   };
   onInputChange = event => {
